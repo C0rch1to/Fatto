@@ -1,7 +1,7 @@
 /**
  * FATTO - Al Forno -
- * Database Central de Variedades del Menu
- * Compartido entre la pagina principal y el gestor de variedades.
+ * Database Central de Variedades del Menú
+ * Base de datos oficial de productos para la landing page.
  */
 
 // 1. Full Authentic Menu Database

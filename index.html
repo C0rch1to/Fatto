@@ -3,13 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FATTO - Al Forno - </title>
+  <title>FATTO - Al Forno - | Pizzas, Tartas y Empanadas en Concepción del Uruguay</title>
   
   <meta name="description" content="FATTO Al Forno - Pizzería gourmet artesanal en Concepción del Uruguay. Pizzas a la piedra, empanadas marcadas a fuego, tartas individuales y salsas exclusivas. ¡Hacé tu pedido directo en Pedix!">
+  <meta name="theme-color" content="#0a0b0e">
+
+  <!-- Open Graph / WhatsApp / Facebook -->
+  <meta property="og:type" content="restaurant">
   <meta property="og:title" content="FATTO - Al Forno - | Pizzas, Tartas y Empanadas">
   <meta property="og:description" content="Velocidad, Calidad y Gourmet! 🔥🍽️✨ Hacé tu pedido online en Pedix y disfrutá del auténtico sabor al horno.">
   <meta property="og:image" content="media/logo.jpg">
-  <meta property="og:type" content="restaurant">
+  <meta property="og:locale" content="es_AR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="FATTO - Al Forno - | Pizzas, Tartas y Empanadas">
+  <meta name="twitter:description" content="Velocidad, Calidad y Gourmet! 🔥🍽️✨ Hacé tu pedido online en Pedix y disfrutá del auténtico sabor al horno.">
+  <meta name="twitter:image" content="media/logo.jpg">
   
   <link rel="icon" type="image/jpeg" href="media/logo.jpg">
   
@@ -72,7 +82,7 @@
           <span>Pedir Online</span>
         </a>
 
-        <button class="menu-toggle-btn" id="menu-toggle-btn" aria-label="Abrir menú de navegación">
+        <button class="menu-toggle-btn" id="menu-toggle-btn" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="mobile-nav">
           <span></span>
           <span></span>
           <span></span>
@@ -156,11 +166,11 @@
 
         <div class="hero-stats">
           <div class="stat-item">
-            <span class="stat-number">28+</span>
+            <span class="stat-number">29</span>
             <span class="stat-label">Variedades de Empanadas</span>
           </div>
           <div class="stat-item">
-            <span class="stat-number">23</span>
+            <span class="stat-number">22</span>
             <span class="stat-label">Estilos de Pizzas</span>
           </div>
           <div class="stat-item">
@@ -174,7 +184,7 @@
       <div class="hero-visual">
         <div class="hero-card-3d">
           <div class="hero-image-wrap">
-            <img src="media/Logo y empanada.jpg" alt="Empanada rellena al horno FATTO con cartel neón">
+            <img src="media/Logo y empanada.jpg" alt="Empanada rellena al horno FATTO con cartel neón" fetchpriority="high" decoding="async">
             <div class="hero-image-gradient"></div>
           </div>
           <div class="hero-card-info">
@@ -254,7 +264,7 @@
         <!-- Card 1: Empanadas -->
         <article class="category-card">
           <div class="category-thumb-wrap">
-            <img src="media/empanadas 01.jpg" alt="Caja de empanadas marcadas al horno con salsa">
+            <img src="media/empanadas 01.jpg" alt="Caja de empanadas marcadas al horno con salsa" loading="lazy" decoding="async">
             <span class="category-badge-count">29 Variedades</span>
           </div>
           <div class="category-body">
@@ -281,8 +291,8 @@
         <!-- Card 2: Pizzas -->
         <article class="category-card">
           <div class="category-thumb-wrap">
-            <img src="media/pizza01.jpg" alt="Pizza al horno con tomates cherry, aceitunas y hierbas">
-            <span class="category-badge-count">23 Variedades</span>
+            <img src="media/pizza01.jpg" alt="Pizza al horno con tomates cherry, aceitunas y hierbas" loading="lazy" decoding="async">
+            <span class="category-badge-count">22 Variedades</span>
           </div>
           <div class="category-body">
             <div>
@@ -298,7 +308,7 @@
               </div>
             </div>
             <button class="category-btn-action" onclick="filterByCat('pizzas')">
-              <span>Ver las 23 pizzas</span>
+              <span>Ver las 22 pizzas</span>
               <span>→</span>
             </button>
           </div>
@@ -307,7 +317,7 @@
         <!-- Card 3: Tartas -->
         <article class="category-card">
           <div class="category-thumb-wrap">
-            <img src="media/tartas.jpg" alt="Caja con tartas individuales doradas al horno">
+            <img src="media/tartas.jpg" alt="Caja con tartas individuales doradas al horno" loading="lazy" decoding="async">
             <span class="category-badge-count">8 Variedades</span>
           </div>
           <div class="category-body">
@@ -317,7 +327,7 @@
                 La porción justa y sustanciosa para tu almuerzo o cena. Disponibles en masa tradicional hojaldrada y opciones 100% integrales saludables.
               </p>
               <div class="category-features-list">
-                <span>Jamon y Queso</span>
+                <span>Jamón y Queso</span>
                 <span>Capresse</span>
                 <span>Brócoli Integral</span>
                 <span>Calabaza</span>
@@ -367,7 +377,7 @@
         <div class="category-tabs-bar" role="tablist">
           <button class="tab-btn active" data-cat="todas">
             <span>Todas las opciones</span>
-            <span class="tab-count">68</span>
+            <span class="tab-count">67</span>
           </button>
           <button class="tab-btn" data-cat="empanadas">
             <span>🥟 Empanadas</span>
@@ -375,7 +385,7 @@
           </button>
           <button class="tab-btn" data-cat="pizzas">
             <span>🍕 Pizzas</span>
-            <span class="tab-count">23</span>
+            <span class="tab-count">22</span>
           </button>
           <button class="tab-btn" data-cat="tartas">
             <span>🥧 Tartas Individuales</span>
@@ -408,7 +418,7 @@
     <div class="container">
       <div class="sauces-grid">
         <div class="sauces-banner-wrap">
-          <img src="media/Salsa (4).jpg" alt="Variedad de salsas y dips FATTO Don Antonio en potes">
+          <img src="media/Salsa (4).jpg" alt="Variedad de salsas y dips FATTO Don Antonio en potes" loading="lazy" decoding="async">
           <div class="sauces-badge-highlight">
             <span class="cup-icon">🥫</span>
             <div>
@@ -532,7 +542,7 @@
     <div class="container">
       <div class="store-card-container">
         <div class="store-image-wrap">
-          <img src="media/fachada.jpg" alt="Fachada iluminada del local FATTO Al Forno de noche">
+          <img src="media/Fachada 2.png" alt="Fachada iluminada del local FATTO Al Forno de noche" loading="lazy" decoding="async">
           <div class="store-overlay-pill">
             <span class="pulse-dot"></span>
             <span>Abierto Turno Noche y Mediodía</span>
@@ -614,7 +624,7 @@
       <div class="footer-grid">
         <div class="footer-brand-col">
           <a href="#inicio" class="brand-logo-wrap footer-brand-logo" aria-label="FATTO Al Forno - Inicio">
-            <img src="media/logo-fatto.png" alt="FATTO - Al Forno -" class="brand-logo-img footer-logo-img">
+            <img src="media/logo-fatto.png" alt="FATTO - Al Forno -" class="brand-logo-img footer-logo-img" loading="lazy" decoding="async">
           </a>
           <p>
             🔥 Velocidad, Calidad y Gourmet! Descubrí la auténtica experiencia de horno artesanal con empanadas de autor, pizzas a la piedra y dips exclusivos.
@@ -661,7 +671,7 @@
           <h4>Nuestra Carta</h4>
           <ul>
             <li><a href="#menu-completo" onclick="filterByCat('empanadas')">Empanadas (29 tipos)</a></li>
-            <li><a href="#menu-completo" onclick="filterByCat('pizzas')">Pizzas (23 tipos)</a></li>
+            <li><a href="#menu-completo" onclick="filterByCat('pizzas')">Pizzas (22 tipos)</a></li>
             <li><a href="#menu-completo" onclick="filterByCat('tartas')">Tartas Individuales</a></li>
             <li><a href="#menu-completo" onclick="filterByCat('salsas')">Dips & Salsas</a></li>
           </ul>
@@ -670,10 +680,10 @@
         <div class="footer-col">
           <h4>Pedidos & Contacto</h4>
           <ul>
-            <li><a href="https://pedix.app/fatto-al-forno" target="_blank" style="color: var(--primary-red-light); font-weight: 700;">Hacer Pedido en Pedix ↗</a></li>
-            <li><a href="https://wa.me/543442330423" target="_blank">WhatsApp: 3442 330423</a></li>
-            <li><a href="tel:3442330423">Teléfono: 3442 330423</a></li>
-            <li><a href="https://instagram.com/fatto_al_forno" target="_blank">Instagram: @fatto_al_forno</a></li>
+            <li><a href="https://pedix.app/fatto-al-forno" target="_blank" rel="noopener noreferrer" style="color: var(--primary-red-light); font-weight: 700;">Hacer Pedido en Pedix ↗</a></li>
+            <li><a href="https://wa.me/543442330423" target="_blank" rel="noopener noreferrer">WhatsApp: 3442 330423</a></li>
+            <li><a href="tel:+543442330423">Teléfono: 3442 330423</a></li>
+            <li><a href="https://instagram.com/fatto_al_forno" target="_blank" rel="noopener noreferrer">Instagram: @fatto_al_forno</a></li>
             <li><span style="color: var(--text-dim);">9 DE JULIO 787, CONCEPCIÓN DEL URUGUAY, ENTRE RÍOS</span></li>
           </ul>
         </div>
