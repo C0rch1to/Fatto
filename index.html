@@ -170,7 +170,7 @@
             <span class="stat-label">Variedades de Empanadas</span>
           </div>
           <div class="stat-item">
-            <span class="stat-number">22</span>
+            <span class="stat-number">5</span>
             <span class="stat-label">Estilos de Pizzas</span>
           </div>
           <div class="stat-item">
@@ -261,8 +261,35 @@
       </div>
 
       <div class="categories-showcase">
-        <!-- Card 1: Empanadas -->
-        <article class="category-card">
+        <!-- Card 1: Pizzas -->
+        <article class="category-card" data-cat="pizzas">
+          <div class="category-thumb-wrap">
+            <img src="media/pizza01.jpg" alt="Pizza al horno a la piedra" loading="lazy" decoding="async">
+            <span class="category-badge-count">5 Variedades</span>
+          </div>
+          <div class="category-body">
+            <div>
+              <h3>Pizzas a la Piedra</h3>
+              <p>
+                Fermentación cuidada, salsa de tomates maduros, muzzarella abundante que funde a la perfección y combinaciones clásicas y gourmet.
+              </p>
+              <div class="category-features-list">
+                <span>Jamón Crudo & Rúcula</span>
+                <span>Pizza Muzarella</span>
+                <span>Pizza Especial</span>
+                <span>Calabresa</span>
+                <span>Provenzal</span>
+              </div>
+            </div>
+            <button class="category-btn-action" onclick="filterByCat('pizzas')">
+              <span>Ver las 5 pizzas</span>
+              <span>→</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Card 2: Empanadas (Centrada en el medio) -->
+        <article class="category-card" data-cat="empanadas">
           <div class="category-thumb-wrap">
             <img src="media/empanadas 01.jpg" alt="Caja de empanadas marcadas al horno con salsa" loading="lazy" decoding="async">
             <span class="category-badge-count">29 Variedades</span>
@@ -288,34 +315,8 @@
           </div>
         </article>
 
-        <!-- Card 2: Pizzas -->
-        <article class="category-card">
-          <div class="category-thumb-wrap">
-            <img src="media/pizza01.jpg" alt="Pizza al horno con tomates cherry, aceitunas y hierbas" loading="lazy" decoding="async">
-            <span class="category-badge-count">22 Variedades</span>
-          </div>
-          <div class="category-body">
-            <div>
-              <h3>Pizzas a la Piedra</h3>
-              <p>
-                Fermentación cuidada, salsa de tomates maduros, muzzarella abundante que funde a la perfección y combinaciones gourmet inolvidables.
-              </p>
-              <div class="category-features-list">
-                <span>Jamón Crudo & Rúcula</span>
-                <span>Panceta & Cheddar</span>
-                <span>Verdeo & Cherry</span>
-                <span>4 Quesos</span>
-              </div>
-            </div>
-            <button class="category-btn-action" onclick="filterByCat('pizzas')">
-              <span>Ver las 22 pizzas</span>
-              <span>→</span>
-            </button>
-          </div>
-        </article>
-
         <!-- Card 3: Tartas -->
-        <article class="category-card">
+        <article class="category-card" data-cat="tartas">
           <div class="category-thumb-wrap">
             <img src="media/tartas.jpg" alt="Caja con tartas individuales doradas al horno" loading="lazy" decoding="async">
             <span class="category-badge-count">8 Variedades</span>
@@ -377,7 +378,7 @@
         <div class="category-tabs-bar" role="tablist">
           <button class="tab-btn active" data-cat="todas">
             <span>Todas las opciones</span>
-            <span class="tab-count">67</span>
+            <span class="tab-count">50</span>
           </button>
           <button class="tab-btn" data-cat="empanadas">
             <span>🥟 Empanadas</span>
@@ -385,7 +386,7 @@
           </button>
           <button class="tab-btn" data-cat="pizzas">
             <span>🍕 Pizzas</span>
-            <span class="tab-count">22</span>
+            <span class="tab-count">5</span>
           </button>
           <button class="tab-btn" data-cat="tartas">
             <span>🥧 Tartas Individuales</span>
@@ -671,7 +672,7 @@
           <h4>Nuestra Carta</h4>
           <ul>
             <li><a href="#menu-completo" onclick="filterByCat('empanadas')">Empanadas (29 tipos)</a></li>
-            <li><a href="#menu-completo" onclick="filterByCat('pizzas')">Pizzas (22 tipos)</a></li>
+            <li><a href="#menu-completo" onclick="filterByCat('pizzas')">Pizzas (5 tipos)</a></li>
             <li><a href="#menu-completo" onclick="filterByCat('tartas')">Tartas Individuales</a></li>
             <li><a href="#menu-completo" onclick="filterByCat('salsas')">Dips & Salsas</a></li>
           </ul>

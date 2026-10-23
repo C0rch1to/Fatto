@@ -287,7 +287,7 @@ function initNavbarAndScroll() {
   const header = document.querySelector('.header');
   
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 40) {
+    if (window.scrollY > 20) {
       header?.classList.add('scrolled');
     } else {
       header?.classList.remove('scrolled');
@@ -356,6 +356,75 @@ function initScrollToTop() {
 }
 
 // ==========================================
+// ==========================================
+// 7. Categories Carousel (Mobile / Pantalla Angosta)
+// ==========================================
+function initCategoriesCarousel() {
+  const showcase = document.querySelector('.categories-showcase');
+  if (!showcase) return;
+
+  const empanadasCard = showcase.querySelector('.category-card[data-cat="empanadas"]');
+  const cards = showcase.querySelectorAll('.category-card');
+
+  function centerCard(targetCard, smooth = false) {
+    if (!targetCard) return;
+    const isCarousel = showcase.scrollWidth > showcase.clientWidth + 10;
+    if (!isCarousel) return;
+
+    const containerWidth = showcase.clientWidth;
+    const cardWidth = targetCard.offsetWidth;
+    const cardLeft = targetCard.offsetLeft;
+    const targetScroll = cardLeft - (containerWidth - cardWidth) / 2;
+
+    showcase.scrollTo({
+      left: Math.max(0, targetScroll),
+      behavior: smooth ? 'smooth' : 'instant'
+    });
+  }
+
+  function ensureEmpanadasCentered() {
+    centerCard(empanadasCard, false);
+  }
+
+  // Centrar empanadas al cargar la página
+  ensureEmpanadasCentered();
+  requestAnimationFrame(ensureEmpanadasCentered);
+  setTimeout(ensureEmpanadasCentered, 60);
+  setTimeout(ensureEmpanadasCentered, 250);
+  window.addEventListener('load', ensureEmpanadasCentered);
+
+  // Re-centrar si cambia el tamaño de ventana entrando en modo carrusel
+  let resizeTimer;
+  let wasCarousel = showcase.scrollWidth > showcase.clientWidth + 10;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      const isNowCarousel = showcase.scrollWidth > showcase.clientWidth + 10;
+      if (isNowCarousel && !wasCarousel) {
+        centerCard(empanadasCard, true);
+      }
+      wasCarousel = isNowCarousel;
+    }, 150);
+  });
+
+  // IntersectionObserver para destacar la card activa/centrada (Modern Web Guidance)
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        entry.target.classList.toggle('is-snapped', entry.isIntersecting);
+      });
+    }, {
+      root: showcase,
+      rootMargin: '0px -35% 0px -35%',
+      threshold: 0.1
+    });
+
+    cards.forEach(card => observer.observe(card));
+  } else {
+    empanadasCard?.classList.add('is-snapped');
+  }
+}
+
 // Init on DOM Content Loaded
 // ==========================================
 document.addEventListener('DOMContentLoaded', () => {
@@ -370,4 +439,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initMenuControls();
   initNavbarAndScroll();
   initScrollToTop();
+  initCategoriesCarousel();
 });

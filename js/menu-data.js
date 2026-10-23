@@ -299,78 +299,6 @@ var MENU_ITEMS = [
     badges: ['gourmet', 'favorito']
   },
   {
-    id: 'piz-panceta-cheddar',
-    name: 'Panceta y Cheddar',
-    category: 'pizzas',
-    categoryName: 'Pizza',
-    icon: '🍕',
-    desc: 'Muzza fundida, abundante panceta crocante y cremosa salsa cheddar.',
-    badges: ['favorito']
-  },
-  {
-    id: 'piz-panceta-roquefort',
-    name: 'Panceta y Roquefort',
-    category: 'pizzas',
-    categoryName: 'Pizza',
-    icon: '🍕',
-    desc: 'Contraste único de panceta ahumada dorada y queso azul derretido.',
-    badges: ['gourmet']
-  },
-  {
-    id: 'piz-panceta-huevo',
-    name: 'Panceta con Huevo',
-    category: 'pizzas',
-    categoryName: 'Pizza',
-    icon: '🍕',
-    desc: 'Panceta crocante al horno, huevos picados y toque aromático de orégano.',
-    badges: []
-  },
-  {
-    id: 'piz-verdeo-cherry',
-    name: 'Verdeo y Cherry',
-    category: 'pizzas',
-    categoryName: 'Pizza',
-    icon: '🍕',
-    desc: 'Cebollitas de verdeo frescas salteadas, tomatitos cherry dulces y muzzarella.',
-    badges: ['gourmet']
-  },
-  {
-    id: 'piz-verdeo-cheddar',
-    name: 'Verdeo y Cheddar',
-    category: 'pizzas',
-    categoryName: 'Pizza',
-    icon: '🍕',
-    desc: 'Cebolla de verdeo aromática con baño de queso cheddar fundido.',
-    badges: []
-  },
-  {
-    id: 'piz-roquefort-cherry',
-    name: 'Roquefort y Cherry',
-    category: 'pizzas',
-    categoryName: 'Pizza',
-    icon: '🍕',
-    desc: 'Intenso roquefort suavizado con tomates cherry asados.',
-    badges: ['gourmet']
-  },
-  {
-    id: 'piz-roquefort',
-    name: 'Roquefort',
-    category: 'pizzas',
-    categoryName: 'Pizza',
-    icon: '🍕',
-    desc: 'Base de salsa, muzzarella y abundante queso azul fundido.',
-    badges: []
-  },
-  {
-    id: 'piz-jamon-roquefort',
-    name: 'Jamón Cocido y Roquefort',
-    category: 'pizzas',
-    categoryName: 'Pizza',
-    icon: '🍕',
-    desc: 'Jamón cocido de alta calidad y trozos de queso azul gratinados.',
-    badges: []
-  },
-  {
     id: 'piz-calabresa',
     name: 'Calabresa',
     category: 'pizzas',
@@ -380,69 +308,6 @@ var MENU_ITEMS = [
     badges: ['picante']
   },
   {
-    id: 'piz-champignones',
-    name: 'Champignones',
-    category: 'pizzas',
-    categoryName: 'Pizza',
-    icon: '🍕',
-    desc: 'Muzzarella con champignones salteados en oliva y hierbas frescas.',
-    badges: ['veggie', 'gourmet']
-  },
-  {
-    id: 'piz-napolitana',
-    name: 'Napolitana',
-    category: 'pizzas',
-    categoryName: 'Pizza',
-    icon: '🍕',
-    desc: 'Muzza, rodajas de tomate natural fresco, ajo picado, perejil y orégano.',
-    badges: ['favorito']
-  },
-  {
-    id: 'piz-provolone',
-    name: 'Provolone',
-    category: 'pizzas',
-    categoryName: 'Pizza',
-    icon: '🍕',
-    desc: 'Gratinada con generoso queso provolone curado y pimienta negra.',
-    badges: []
-  },
-  {
-    id: 'piz-4-quesos',
-    name: '4 Quesos',
-    category: 'pizzas',
-    categoryName: 'Pizza',
-    icon: '🍕',
-    desc: 'Muzzarella, roquefort, provolone y queso parmesano gratinado.',
-    badges: ['favorito']
-  },
-  {
-    id: 'piz-margarita',
-    name: 'Margarita',
-    category: 'pizzas',
-    categoryName: 'Pizza',
-    icon: '🍕',
-    desc: 'Salsa de tomate, muzzarella, hojas de albahaca fresca y aceite de oliva.',
-    badges: ['veggie']
-  },
-  {
-    id: 'piz-primavera',
-    name: 'Primavera',
-    category: 'pizzas',
-    categoryName: 'Pizza',
-    icon: '🍕',
-    desc: 'Muzza, jamón cocido, rodajas de tomate, morrones y huevo cocido.',
-    badges: []
-  },
-  {
-    id: 'piz-fugazzeta',
-    name: 'Fugazzeta',
-    category: 'pizzas',
-    categoryName: 'Pizza',
-    icon: '🍕',
-    desc: 'Cebolla dorada al horno, muzzarella abundante y orégano fresco.',
-    badges: ['veggie', 'favorito']
-  },
-  {
     id: 'piz-provenzal',
     name: 'Provenzal',
     category: 'pizzas',
@@ -450,24 +315,6 @@ var MENU_ITEMS = [
     icon: '🍕',
     desc: 'Muzzarella gratinada con emulsión aromática de ajo tierno y perejil.',
     badges: ['veggie']
-  },
-  {
-    id: 'piz-capresse',
-    name: 'Pizza Capresse',
-    category: 'pizzas',
-    categoryName: 'Pizza',
-    icon: '🍕',
-    desc: 'Tomates cherry y redondos frescos, muzzarella y finas hebras de albahaca.',
-    badges: ['veggie']
-  },
-  {
-    id: 'piz-brocoli-roquefort',
-    name: 'Brócoli con Roquefort',
-    category: 'pizzas',
-    categoryName: 'Pizza',
-    icon: '🍕',
-    desc: 'Flores de brócoli al punto cubiertas con queso roquefort gratinado.',
-    badges: ['veggie', 'gourmet']
   },
 
   // --- TARTAS INDIVIDUALES ---
