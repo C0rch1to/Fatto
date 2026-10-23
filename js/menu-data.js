@@ -290,13 +290,13 @@ var MENU_ITEMS = [
     badges: ['favorito']
   },
   {
-    id: 'piz-crudo-rucula',
-    name: 'Jamón Crudo y Rúcula',
+    id: 'piz-panceta',
+    name: 'Panceta',
     category: 'pizzas',
     categoryName: 'Pizza',
     icon: '🍕',
-    desc: 'Base de muzzarella, jamón crudo estacionado, rúcula fresca y lluvia de queso duro.',
-    badges: ['gourmet', 'favorito']
+    desc: 'Muzzarella fundida, abundante panceta crocante dorada al horno.',
+    badges: ['favorito']
   },
   {
     id: 'piz-calabresa',
